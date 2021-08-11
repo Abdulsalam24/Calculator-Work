@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="section">
+        <div class="cal-box">
+            <div class="box-outer">
+                <form class="calculator" name="calc">
+                    <input class="result" name="display" type="text">
+                    <span class="num clear" onclick="document.calc.display.value = ' ' ">c</span>
+                    <span class="num operator" onclick="document.calc.display.value += '/'">/</span>
+                    <span class=" num" onclick="document.calc.display.value += '7'">7</span>
+                    <span class="num" onclick="document.calc.display.value += '8'">8</span>
+                    <span class="num" onclick="document.calc.display.value += '9'">9</span>
+                    <span class="num operator" onclick="document.calc.display.value += '*'">*</span>
+                    <span class="num" onclick="document.calc.display.value += '6'">6</span>
+                    <span class="num" onclick="document.calc.display.value += '5'">5</span>
+                    <span class="num" onclick="document.calc.display.value += '4'">4</span>
+                    <span class="num operator" onclick="document.calc.display.value += '+'">+</span>
+                    <span class="num" onclick="document.calc.display.value += '3'">3</span>
+                    <span class="num" onclick="document.calc.display.value += '2'">2</span>
+                    <span class="num" onclick="document.calc.display.value += '1'">1</span>
+                    <span class="num operator" onclick="document.calc.display.value += '-'">-</span>
+                    <span class="num equal" onclick="document.calc.display.value = eval(document.calc.display.value)">=</span>
+                </form>
+            </div>    
+        </div>
+    </section>
+</body>
+<script src="main.js"></script>
+</html>
